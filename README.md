@@ -1,6 +1,6 @@
 # Chat App
 
-A simple instant messaging application.
+A simple instant messaging platform.
 
 ## Table of Contents
 
@@ -12,31 +12,31 @@ A simple instant messaging application.
 
 ## Introduction
 
-This project is a concept of a simple instant messaging application that is built on the MEAN Stack and is integrated with the OpenAI API to analyze and query any chat log with natural language. This integration enables users to easily search through, summarize, query, and analyze their chat logs with other users using natural language with ease.
+This project is a concept for a simple instant messaging platform built using the MEAN Stack. It integrates the OpenAI API, enabling users to analyze and query chat logs using natural language. This integration allows for seamless searching, summarizing, querying, and analyzing of chat conversations.
 
 ## Features
 
-- Responsive and intuitive modern user interface
-- Robust authentication system based on JWTs
-- Session handling
-- Ability to create and invite other users to different chat rooms
-- Switch instantly between chat rooms
-- View all users in a chat room
-- Realtime message delivery using WebSockets
-- Unique colors for each user in a chat room
-- Ability to delete messages and chat rooms
-- Chat logs from each room are embedded and stored in a vectorstore
-- Ability to query the chat using natural language using langchain and openai completion models with the vectorstore as context
+- Modern, responsive user interface
+- Secure authentication system using JWTs
+- Efficient session management
+- Ability to create and invite users to various chat rooms
+- Instant switching between chat rooms
+- View all participants in a chat room
+- Real-time message delivery via WebSockets
+- Distinctive colors for each user in a chat room
+- Options to delete messages and chat rooms
+- Chat logs stored in a vector store for each room
+- Natural language querying of chat logs using Langchain and OpenAI completion models, with the vector store serving as context
 
 ## Setup
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/RSYashwanth/Chat-Application.git
+   git clone https://github.com/simartathgir/Chat-Application.git
    ```
 2. Set OpenAI API key:
    ```sh
-   vim .env.example # Follow instructions inside file
+   vim .env.example # Follow instructions inside the file
    ```
 2. Run docker-compose
    ```sh
@@ -48,29 +48,29 @@ This project is a concept of a simple instant messaging application that is buil
 
 ### Creating a user
 
-1. On the welcome page, click on the `Get Started` button
-2. Select the `sign up here` text at the bottom of the popup to create a profile
-3. Enter a username, email, password and password confirmation to sign up
-4. Repeat these steps with unique usernames to create multiple accounts
+1. On the welcome page, click "Get Started."
+2. Select "sign up here" at the bottom of the popup to create an account.
+3. Enter a username, email, password, and password confirmation to sign up.
+4. Repeat these steps with different usernames to create multiple accounts.
 
 ### Creating a chat room
 
-1. On the home screen, click the `+` button besides the `Chat` pane
-2. In the popup, enter a list of space-seperated valid usernames to include all the users in the chat room
-3. Enter a name for the name of the chat
-4. Click the `Create Chat` button
+1. On the home screen, click the "+" button next to the Chat pane.
+2. In the popup, enter a list of space-separated valid usernames to include in the chat room.
+3. Provide a name for the chat room.
+4. Click "Create Chat."
 
 ### Messaging
 
-1. Type a message in the chat box and click enter to send it to other users in the chat
-2. To delete a message, click on the `...` to the right of any hovered message and click delete
-3. To delete a chat room, Click the `x` next to the chat's name
+1. Type your message in the chat box and press Enter to send it to the room.
+2. To delete a message, hover over it, click the "..." on the right, and select "Delete."
+3. To delete a chat room, click the "x" next to the chat's name.
 
 ### Searching
 
-1. To search through a particular chat room, first enter a chat room
-2. Press the circular button on the top-right corner besides the `Users` pane
-3. Type in a query and wait for the model to analyze and respond. (Don't forget to set you API key in the .env file)
+1. To search within a chat room, first enter the room.
+2. Click the circular button at the top-right corner next to the Users pane.
+3. Type your query and wait for the model to analyze and respond (ensure your API key is set in the .env file).
 
 ## Examples
 1. ![Chat App sign-up screenshot](images/11.png)
